@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;                /* Set default font */
+    margin: 0;                                     /* Remove default margin */
+    padding: 0;                                    /* Remove default padding */
+    background-color: #2c3e50;                     /* Dark blue-gray background */
+    min-height: 100vh;                            /* Full viewport height */
+    display: flex;                                /* Enable flexbox layout */
+}
+
+/* Layout containers */
+.container {
+    width: 100%;                                  /* Full width container */
+    margin: 0;                                    /* No margins */
+    background-color: #34495e;                    /* Lighter blue-gray background */
+    padding: 20px;                                /* Inner spacing */
+    box-shadow: none;                             /* No shadow */
+    border-radius: 0;                             /* No rounded corners */
+}
+
+.input-container {
+    display: flex;                                /* Horizontal layout */
+    gap: 10px;                                    /* Space between elements */
+    margin-bottom: 20px;                          /* Bottom spacing */
+    padding: 0 20px;                              /* Horizontal padding */
+}
+
+/* Common input element styles */
+input, select, button {
+    padding: 12px;                                /* Inner spacing */
+    border: none;                                 /* No borders */
+    border-radius: 5px;                           /* Rounded corners */
+    font-size: 16px;                              /* Text size */
+}
+
+/* Specific input styles */
+input {
+    flex: 1;                                      /* Take remaining space */
+    background-color: #ecf0f1;                    /* Light gray background */
+}
+
+select {
+    cursor: pointer;                              /* Hand cursor on hover */
+    color: white;                                 /* White text */
+}
+
+button {
+    padding: 12px 20px;                           /* Horizontal and vertical padding */
+    background-color: #f1c40f;                    /* Yellow background */
+    color: #2c3e50;                               /* Dark text color */
+    cursor: pointer;                              /* Hand cursor on hover */
+    font-weight: bold;                            /* Bold text */
+    transition: all 0.3s ease;                    /* Smooth transitions */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;                           /* Center align text */
+    color: white;                                 /* White text */
+    margin-top: 0;                                /* No top margin */
+    font-size: 2.5em;                             /* Large text size */
+}
+
+/* List styles */
+ul {
+    list-style: none;                             /* Remove bullet points */
+    padding: 0 20px;                              /* Horizontal padding */
+    margin: 0;                                    /* No margins */
+}
+
+li {
+    display: flex;                                /* Horizontal layout */
+    justify-content: space-between;               /* Space between items */
+    align-items: center;                          /* Vertical centering */
+    padding: 15px;                                /* Inner spacing */
+    margin-bottom: 10px;                          /* Bottom spacing */
+    border-radius: 5px;                           /* Rounded corners */
+    color: white;                                 /* White text */
+    transition: all 0.3s ease;                    /* Smooth transitions */
+}
+
+/* Common hover effects */
+li:hover {
+    transform: scale(1.01);                       /* Slight grow effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);       /* Shadow on hover */
+}
+
+button:hover {
+    background-color: #f39c12;                    /* Darker yellow on hover */
+    transform: scale(1.05);                       /* Grow effect */
+}
+
+/* Category color styles */
+.Personal, select:has(option[value="Personal"]:checked), select option[value="Personal"] {
+    background-color: #3498db;                    /* Blue background */
+}
+
+.Work, select:has(option[value="Work"]:checked), select option[value="Work"] {
+    background-color: #e67e22;                    /* Orange background */
+}
+
+.Shopping, select:has(option[value="Shopping"]:checked), select option[value="Shopping"] {
+    background-color: #2ecc71;                    /* Green background */
+}
+
+.Urgent, select:has(option[value="Urgent"]:checked), select option[value="Urgent"] {
+    background-color: #e74c3c;                    /* Red background */
+}
+
+/* Option text color */
+select option {
+    color: rgb(29, 27, 27);                                 /* White text for options */
+}
+
+/* Task button styles */
+.task-button {
+    display: flex;                                /* Horizontal layout */
+    gap: 10px;                                    /* Space between buttons */
+}
+
+.task-button button {
+    padding: 8px 15px;                            /* Button padding */
+    background-color: rgba(255, 255, 255, 0.9);   /* Semi-transparent white */
+    color: #333;                                  /* Dark text */
+    font-size: 14px;                              /* Smaller text */
+}
+
+.task-button button:hover {
+    background-color: white;                      /* Full white on hover */
+}
+
+/* Completed task style */
+.Completed {
+    opacity: 0.7;                                 /* Partial transparency */
+    text-decoration: line-through;                /* Strike-through text */
+}
+
+/* Task text style */
+span {
+    flex: 1;                                      /* Take remaining space */
+    margin-right: 15px;                           /* Right spacing */
+    font-size: 16px;                              /* Text size */
+}
+
