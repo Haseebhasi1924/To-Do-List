@@ -25,7 +25,8 @@ body {
     display: flex;                                /* Horizontal layout */
     gap: 10px;                                    /* Space between elements */
     margin-bottom: 20px;                          /* Bottom spacing */
-    padding: 0 20px;                              /* Horizontal padding */
+    padding: 0 30px;  /* Slightly more padding */
+    margin: 15px 0;   /* Better vertical spacing */
 }
 
 /* Common input element styles */
@@ -53,7 +54,11 @@ button {
     color: #2c3e50;                               /* Dark text color */
     cursor: pointer;                              /* Hand cursor on hover */
     font-weight: bold;                            /* Bold text */
-    transition: all 0.3s ease;                    /* Smooth transitions */
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);  /* Slight press effect */
 }
 
 /* Heading styles */
@@ -173,5 +178,10 @@ footer p {
     margin: 0;                                    /* Remove default margin */
     color: #ecf0f1;                               /* Light text color */
     font-size: 1.2em;                             /* Larger text size */
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
 }       
 
