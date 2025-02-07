@@ -29,7 +29,8 @@ The To-Do List Web App is a simple yet powerful task management tool designed to
 ✅ Mobile-Friendly Design ensures accessibility on all devices.
 
 📷 Screenshot (Optional: Add an image of your project here)
-![Screenshot (14)](https://github.com/user-attachments/assets/e6361938-0071-44df-9e4b-2182c34b6c10)
+![Screenshot (15)](https://github.com/user-attachments/assets/8a96b290-c771-4cb3-bead-8f75fc1dd0bd)
+
 
 
 **📂 Project Structure**
