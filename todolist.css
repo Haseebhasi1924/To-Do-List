@@ -16,6 +16,9 @@ body {
     padding: 20px;                                /* Inner spacing */
     box-shadow: none;                             /* No shadow */
     border-radius: 0;                             /* No rounded corners */
+    /* min-height: 100vh;                            Minimum full viewport height */
+    display: flex;                                /* Enable flexbox */
+    flex-direction: column;                      /* Stack children vertically */
 }
 
 .input-container {
@@ -141,4 +144,34 @@ span {
     margin-right: 15px;                           /* Right spacing */
     font-size: 16px;                              /* Text size */
 }
+
+/* Header styles */
+header {
+    background-color: #1a252f;                    /* Darker background for header */
+    padding: 15px 0;                              /* Vertical padding */
+    text-align: center;                           /* Center align content */
+    border-bottom: 3px solid #2ecc71;             /* Green bottom border */
+    margin-bottom: 20px;                          /* Space below header */
+}
+
+header h1 {
+    margin: 0;                                    /* Remove default margin */
+    color: #ecf0f1;                               /* Light text color */
+    font-size: 2.8em;                             /* Larger text size */
+    text-transform: uppercase;                    /* Uppercase text */
+    letter-spacing: 2px;                          /* Space between letters */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;                             /* Push footer to bottom */
+    text-align: center;                           /* Center align text */
+    padding: 15px 0;                              /* Vertical padding */
+}
+
+footer p {
+    margin: 0;                                    /* Remove default margin */
+    color: #ecf0f1;                               /* Light text color */
+    font-size: 1.2em;                             /* Larger text size */
+}       
 
